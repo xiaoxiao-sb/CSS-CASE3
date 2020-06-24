@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			*{
+				margin: 0;
+				padding: 0;
+				/*清除列表样式*/
+				list-style: none;
+			}
+			.nav{
+				width: 700px;
+				margin: 100px auto;
+			}
+			.nav ul li{
+				float:left;
+				margin-right: 5px;
+			}
+			.nav ul li a{
+				width: 100px;
+				height: 30px;
+				background: red;
+				/*display: inline-block;*/
+				display: block;
+				/*float:left;*/
+				text-align: center;
+				line-height: 30px;
+				color:#fff;
+				text-decoration: none;
+			}
+			.clearfix:after {
+				content: ".";
+				display: block;
+				height: 0;
+				clear: both;
+				visibility: hidden
+			}
+			.nav ul li a:hover{
+				background: yellow;
+				color:blue;
+				text-decoration: underline;
+			}
+		</style>
+	</head>
+	<body>
+		<!--
+			导航对于网页来说是非常重要的,如果将一堆a标签排列在一起,搜索引擎会认为是在作弊
+		-->
+		<div class="nav">
+			<ul class="clearfix">
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+					<a href="##">导航</a>
+				</li>
+				<li>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>

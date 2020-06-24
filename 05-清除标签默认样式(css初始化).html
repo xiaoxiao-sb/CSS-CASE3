@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style type="text/css">
+			/*
+			 * 清除标签默认样式(css初始化): html标签都会有一些默认的属性,属性有一个固定的值,
+			 * 当我们在写页面的时候,为了准确的设置从ps中量取的数值,先将这些标签的默认样式属性给
+			 * 初始化,再设置 
+			 */
+			/*
+			 * 第一种方法:  通常在讲知识点的时候使用
+			 */
+			/**{
+				margin: 0;
+				padding: 0;
+			}*/
+			/*
+			 * 第二种方法: 将用到的标签用并集选择器一个一个写,避免用*造成效率低下. 在工作中
+			 * 推荐使用
+			 * 
+			 * 
+			 */
+			
+			body,
+			div,
+			dl,
+			dt,
+			dd,
+			ul,
+			ol,
+			li,
+			h1,
+			h2,
+			h3,
+			h4,
+			h5,
+			h6,
+			pre,
+			code,
+			form,
+			fieldset,
+			legend,
+			input,
+			button,
+			textarea,
+			p,
+			blockquote,
+			th,
+			td {
+				margin: 0;
+				padding: 0;
+			}
+			
+			div {
+				height: 200px;
+				background: pink;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div></div>
+		<h1>标题</h1>
+		<p>段落</p>
+		<p>段落</p>
+		<ul>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+		</ul>
+	</body>
+
+</html>
